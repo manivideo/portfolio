@@ -7,7 +7,7 @@ const works = [
   { id: "tiktok-live", title: "TikTok 実写広告動画", categories: ["縦型動画", "広告動画"], type: "shorts", youtubeId: "2Mv6Zq5BxFA", link: "https://youtube.com/shorts/2Mv6Zq5BxFA", task: "構成作成・絵コンテ作成・撮影指示・編集" },
   { id: "tiktok-pr", title: "TikTok PR動画", categories: ["縦型動画", "広告動画"], type: "shorts", youtubeId: "WURHZydmOMY", link: "https://youtube.com/shorts/WURHZydmOMY", task: "撮影・編集" },
   { id: "tiktok-examples", title: "TikTok 系統別動画作成例", categories: ["縦型動画"], type: "shorts", youtubeId: "VWkocVqG2PM", link: "https://www.youtube.com/shorts/VWkocVqG2PM", task: "編集" },
-  { id: "instagram-manga", title: "Instagram 漫画広告", categories: ["縦型動画", "Instagram", "広告動画"], type: "youtube", youtubeId: "g-NZjHNFO_k", link: "https://youtu.be/g-NZjHNFO_k", task: "編集" },
+  { id: "instagram-manga", title: "Instagram 漫画広告", categories: ["縦型動画", "広告動画"], type: "youtube", youtubeId: "g-NZjHNFO_k", link: "https://youtu.be/g-NZjHNFO_k", task: "編集" },
   { id: "takara-mini4", title: "タカラトミー様 ミニ四駆アバンテJr 広告動画", categories: ["横型動画", "広告動画"], type: "youtube", youtubeId: "6TSm_x9Yymc", link: "https://www.youtube.com/watch?v=6TSm_x9Yymc", task: "構成作成・絵コンテ作成・撮影ディレクション・編集" },
   { id: "axa-anim", title: "アクサ生命様 アニメーション広告動画", categories: ["横型動画", "広告動画"], type: "youtube", youtubeId: "Aj_egpYs6YQ", link: "https://youtu.be/Aj_egpYs6YQ", task: "編集（アニメーション）" },
   { id: "yt-anim-ad", title: "YouTube アニメーション広告動画", categories: ["横型動画", "広告動画"], type: "youtube", youtubeId: "rdQcMix4Lig", link: "https://www.youtube.com/watch?v=rdQcMix4Lig", task: "構成作成・デザイン作成・編集・ナレーション発注" },
