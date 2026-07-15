@@ -3,13 +3,13 @@
   --bg-soft: #f2f2f2;
   --panel: #ffffff;
   --panel-strong: #ebebeb;
-  --accent: #111111;
-  --accent-soft: #333333;
+  --accent: #4361ee;
+  --accent-soft: #3451d1;
   --text: #111111;
   --muted: #555555;
   --subtle: #999999;
   --line: rgba(0, 0, 0, 0.09);
-  --accent-line: rgba(0, 0, 0, 0.18);
+  --accent-line: rgba(67, 97, 238, 0.28);
   --shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
   --font: "Noto Sans JP", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --nav-height: 64px;
@@ -347,7 +347,7 @@ section {
   height: 32px;
   margin-bottom: 16px;
   border-radius: 4px;
-  background: rgba(0, 0, 0, 0.06);
+  background: rgba(67, 97, 238, 0.1);
   color: var(--accent);
   font-size: 0.72rem;
   font-weight: 900;
@@ -607,9 +607,9 @@ section {
   align-items: center;
   min-height: 22px;
   padding: 0 8px;
-  border: 1px solid rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(67, 97, 238, 0.22);
   border-radius: 999px;
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(67, 97, 238, 0.07);
   color: var(--accent-soft);
   font-size: 0.68rem;
   font-weight: 700;
