@@ -144,8 +144,8 @@ section {
   position: relative;
   display: flex;
   align-items: center;
-  min-height: 70vh;
-  padding: calc(var(--nav-height) + 40px) 0 48px;
+  min-height: auto;
+  padding: calc(var(--nav-height) + 32px) 0 32px;
   overflow: hidden;
 }
 
