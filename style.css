@@ -716,6 +716,82 @@ footer {
   font-size: 0.78rem;
 }
 
+/* ===== Sub-page (accounts/) ===== */
+.subpage-main {
+  padding-top: calc(var(--nav-height) + 56px);
+  padding-bottom: 100px;
+  min-height: 100vh;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 40px;
+  color: var(--muted);
+  font-size: 0.875rem;
+  font-weight: 700;
+  transition: color var(--ease);
+}
+
+.back-link:hover {
+  color: var(--accent);
+}
+
+.accounts-lead {
+  max-width: 680px;
+  margin: 0 0 48px;
+  color: var(--muted);
+  line-height: 1.9;
+}
+
+.accounts-list {
+  display: grid;
+  gap: 12px;
+  max-width: 680px;
+}
+
+.account-card {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  padding: 22px 26px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel-strong);
+  color: inherit;
+  transition: border-color var(--ease), transform var(--ease);
+}
+
+.account-card:hover {
+  border-color: var(--accent-line);
+  transform: translateX(4px);
+}
+
+.account-pin {
+  flex-shrink: 0;
+  font-size: 1.1rem;
+  padding-top: 1px;
+}
+
+.account-name {
+  margin: 0 0 10px;
+  color: var(--accent);
+  font-size: 1.05rem;
+  font-weight: 900;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.account-meta {
+  padding: 0;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.9;
+  list-style: none;
+}
+
 @media (max-width: 920px) {
   .hero-stats,
   .services-grid,

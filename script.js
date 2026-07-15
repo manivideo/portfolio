@@ -1,5 +1,5 @@
 const works = [
-  { id: "tiktok-accounts", title: "TikTok 運用代行アカウント実績", categories: ["縦型動画", "運用代行"], type: "accounts", task: "アカウント設計・企画・構成・撮影・編集・運用" },
+  { id: "tiktok-accounts", title: "SNS運用代行実績", categories: ["縦型動画", "運用代行"], type: "accounts", task: "アカウント設計・企画・構成・撮影・編集・運用" },
   { id: "takara-pr", title: "タカラトミー様 商品PR 広告動画", categories: ["縦型動画", "広告動画"], type: "shorts", youtubeId: "O6GpVNyhmUY", link: "https://youtube.com/shorts/O6GpVNyhmUY", task: "構成作成・撮影指示・編集" },
   { id: "product-pr", title: "商品PR 広告動画", categories: ["縦型動画", "広告動画"], type: "shorts", youtubeId: "HUxkwcy1i38", link: "https://www.youtube.com/shorts/HUxkwcy1i38", task: "構成・台本作成・撮影指示・編集・ナレーション" },
   { id: "app-ad-1", title: "アプリ紹介 広告動画①", categories: ["縦型動画", "広告動画"], type: "shorts", youtubeId: "Crgo53al51g", link: "https://youtube.com/shorts/Crgo53al51g", task: "構成作成・デザイン・編集・ナレーション発注" },
@@ -37,9 +37,13 @@ function createCard(work) {
   const card = document.createElement("a");
   card.className = "work-card";
   card.dataset.categories = work.categories.join(",");
-  card.target = "_blank";
-  card.rel = "noopener noreferrer";
-  card.href = work.type === "accounts" ? "https://www.tiktok.com/@manivideo.jp" : work.link;
+  if (work.type === "accounts") {
+    card.href = "accounts/";
+  } else {
+    card.href = work.link;
+    card.target = "_blank";
+    card.rel = "noopener noreferrer";
+  }
   card.setAttribute("aria-label", `${work.title}を開く`);
 
   const tags = work.categories.map(createTag).join("");
@@ -52,8 +56,8 @@ function createCard(work) {
       <div class="work-thumb">
         <div class="accounts-placeholder">
           <span class="label">Account Growth</span>
-          <p>TikTok 運用代行実績</p>
-          <small>フォロワー 0 → 最大 7万人</small>
+          <p>SNS運用代行実績</p>
+          <small>最大 30万人</small>
         </div>
       </div>
       <div class="work-info">
