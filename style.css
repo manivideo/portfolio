@@ -747,37 +747,52 @@ footer {
 
 .accounts-list {
   display: grid;
-  gap: 12px;
-  max-width: 680px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 18px;
 }
 
 .account-card {
   display: flex;
-  gap: 18px;
-  align-items: flex-start;
-  padding: 22px 26px;
+  flex-direction: column;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: var(--panel-strong);
+  background: var(--panel);
+  overflow: hidden;
   color: inherit;
   transition: border-color var(--ease), transform var(--ease);
 }
 
 .account-card:hover {
   border-color: var(--accent-line);
-  transform: translateX(4px);
+  transform: translateY(-3px);
 }
 
-.account-pin {
-  flex-shrink: 0;
-  font-size: 1.1rem;
-  padding-top: 1px;
+.account-card-thumb {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: var(--panel-strong);
+}
+
+.account-card-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: transform 420ms ease;
+}
+
+.account-card:hover .account-card-thumb img {
+  transform: scale(1.04);
+}
+
+.account-card-body {
+  padding: 16px 20px 20px;
 }
 
 .account-name {
   margin: 0 0 10px;
   color: var(--accent);
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-weight: 900;
   text-decoration: underline;
   text-underline-offset: 3px;
@@ -787,7 +802,7 @@ footer {
   padding: 0;
   margin: 0;
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 0.875rem;
   line-height: 1.9;
   list-style: none;
 }

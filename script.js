@@ -57,7 +57,7 @@ function createCard(work) {
         <div class="accounts-placeholder">
           <span class="label">Account Growth</span>
           <p>SNS運用代行実績</p>
-          <small>最大 30万人</small>
+          <small>フォロワー 0 → 最大 30万人</small>
         </div>
       </div>
       <div class="work-info">
